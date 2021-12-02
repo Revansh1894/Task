@@ -16,7 +16,7 @@ while(1):
     img[:]=[b,g,r]
     text='color : '+(str(b)+','+str(g)+','+str(r))
     font=cv.FONT_HERSHEY_PLAIN
-    cv.putText(img,text,(50,50),font,2,(255-r,255-b,255-g),2)
+    cv.putText(img,text,(50,50),font,2,(255-b,255-g,255-r),2)
     cv.imshow('image',img)
     cv.waitKey(1)
 cv.destroyAllWindows()
